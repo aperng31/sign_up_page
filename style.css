@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    /* min-width: 100vw; */
+    
+}
+
+#left {
+    position: relative;
+    width: 25%;
+    min-width: 200px;
+    height: 100vh;
+} 
+img[src="./img.jpg"] {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+} 
+.odin {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -1;
+}    
+img[src="odin-lined.png"] {
+    position: absolute;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 40%;
+    min-width: 500px;
+}
+
+.container .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: flex-start;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    width: 100%;
+    background-color: lightsteelblue;
+    font-weight: bold;
+    height: 35%;
+    /* min-height: ??; */
+    
+}
+
+.container > .top > p {
+    font-size: 20px;
+
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    align-items: flex-start;
+    justify-content: start;
+}
+h2 {
+    padding-left: 16px;
+    height: 10%;
+}
+.entries {
+    display: flex;
+    justify-content: left;
+    gap: 16px;
+    height: 40%;
+    padding: 16px;
+    box-shadow: 10px;
+    margin-bottom: 16px;
+} 
+.entry {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 100%
+}
+
+input {
+    width: 200px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    border: 2px solid #E5E7EB;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+input:focus {
+    box-shadow: 5px;
+    border-color: red;
+}
+/*form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    height: 100vh;
+    width: 50vw;
+    background-color: aliceblue;
+}*/
+
+.bottom {
+    padding: 16px;
+
+    background-color: beige;
+    display: flex;
+    width: 100%;
+    height: 55%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}    
+
+.bottom button {
+    margin-bottom: 8px;
+    height: 40px;
+    width: 200px;
+
+    background-color: green;
+    box-shadow: 2px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}

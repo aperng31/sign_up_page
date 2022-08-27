@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Sign-up</title>
+</head>
+<body>
+    <div id="left">
+        <img src="./img.jpg">
+        <div class="odin">
+            <img src="odin-lined.png">
+        </div>
+        
+        
+    </div>
+    
+    <div class="container">
+        <div class="top">
+            <p>
+                This is not a real online service! You know you need something like this in your life to help
+                you realize your deepest dreams. 
+            </p>
+            <p>
+                Sign up <em> now </em> to get started.
+            </p>
+            <p>
+                You <em> know </em> you want to.
+            </p>
+        </div>
+
+        <form id='form' action="/my-handling-form-page" method="post">
+
+            <h2>Let's do this!</h2>
+            
+            <div class="entries">
+                <div class="entry">
+                    <label for="first_name">First name</label>
+                    <input type="text" name="first_name" id="first_name" placeholder="Bob">
+
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="hello@example.com">
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                
+                </div>
+                <div class="entry">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name" placeholder="Smith">
+
+                    <label for="Phone number">Phone number</label>
+                    <input type="number" name="phone_number" id="phone_number" placeholder="1234567890">
+
+                    <label for="confirm_password">Confirm password</label>
+                    <input type="password" name="confirm_password" id="confirm_password">
+                </div>
+            </div>
+            
+            <div class="bottom">
+                <button type="submit">
+                Create Account
+                </button>
+            
+                <label>Already have an account? </label><a href="#" class="login">Log-in</a>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
