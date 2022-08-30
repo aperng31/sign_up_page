@@ -76,18 +76,24 @@ h2 {
 }
 .entries {
     display: flex;
+    flex-direction: column;
     justify-content: left;
-    gap: 16px;
+    gap: 6px;
     height: 40%;
+    width: 100%;
     padding: 16px;
     box-shadow: 10px;
     margin-bottom: 16px;
 } 
 .entry {
     display: flex;
+    /* flex-direction: column; */
+    gap: 16px;
+    width: 100%
+}
+.each {
+    display: flex;
     flex-direction: column;
-    gap: 2px;
-    height: 100%
 }
 
 input {
@@ -100,9 +106,15 @@ input {
 }
 
 input:focus {
-    box-shadow: 5px;
-    border-color: red;
+    background-color: lightblue;
+    opacity: .5;
 }
+
+input:valid {
+    background-color: lightgreen;
+    border: 2px solid green;
+}
+
 /*form {
     display: flex;
     flex-direction: column;
